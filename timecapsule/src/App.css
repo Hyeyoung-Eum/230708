@@ -1,0 +1,30 @@
+/* @media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+} */
+
+.App-container {
+  border: 1px solid black;
+
+  width: 100vw; /* 화면의 너비에 맞춰 조정 */
+  height: 100vh; /* 화면의 높이에 맞춰 조정 */
+  margin: 0 auto;
+}
+
+/* 큰 화면, 가령 데스크탑 또는 랩톱의 뷰포트에 대한 스타일 */
+@media screen and (min-width: 393px) {
+  .App-container {
+    width: 393px; /* 너비를 393px로 고정 */
+  }
+}
+
+/* 모바일 기기와 같이 작은 화면의 뷰포트에 대한 스타일 */
+@media screen and (max-width: 392px) {
+  .App-container {
+    width: 100%; /* 뷰포트 너비의 100% */
+    height: auto; /* 높이를 자동으로 조정 */
+    /* 필요한 경우 추가 스타일 */
+  }
+}
